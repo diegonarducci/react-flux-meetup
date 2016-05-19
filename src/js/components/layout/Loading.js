@@ -15,7 +15,7 @@ export default class Loading extends React.Component {
   }
 
   componentWillMount() {
-    LayoutStore.on("change", this.toogleLoading);
+    LayoutStore.on("changeLoading", this.toogleLoading);
   }
 
   toogleLoading() {

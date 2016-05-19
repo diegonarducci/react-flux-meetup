@@ -12,14 +12,10 @@ class LayoutStore extends EventEmitter {
   handleActions(action) {
     switch(action.type) {
       case Constants.TOOGLE_LOADING: {
-        this._toogleLoading();
+        this.emit("changeLoading");
         break;
       }
     }
-  }
-
-  _toogleLoading() {
-    this.emit("change");
   }
 }
 

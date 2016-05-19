@@ -18,7 +18,7 @@ export default class Layout extends React.Component {
     return (
       <div>
         <Loading/>
-        <Header/>
+        <Header title="REACT + FLUX"/>
         {this.props.children}
       </div>
     );

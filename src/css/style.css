@@ -1,3 +1,41 @@
+/* RESET */
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  background-color: green;
+  color: white;
+  position: relative;
+}
+
+header h1 {
+  padding: 20px;
+  color: white;
+}
+
+header nav {
+  position: absolute;
+  right: 20px;
+  top: 23px;
+}
+
+header nav li {
+  display: inline-block;
+  padding-left: 40px;
+}
+
+header nav li a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+
 /* LOADING */
 .curtain {
   position: absolute;
@@ -9,6 +47,7 @@
   visibility: hidden;
   opacity: 0;
   transition: all 1s ease;
+  z-index: 1;
 }
 
 .curtain.open {
