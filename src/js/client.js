@@ -6,16 +6,16 @@ import { Router, Route, IndexRoute, hashHistory } from "react-router";
 import Layout from "./pages/Layout";
 
 // ALL PAGES
-import Home from "./pages/Home";
+import App from "./pages/App";
 import About from "./pages/About";
 
-const app = document.getElementById('app');
+const wrapper = document.getElementById('wrapper');
 
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Layout}>
-      <IndexRoute component={Home}></IndexRoute>
+      <IndexRoute component={App}></IndexRoute>
       <Route path="/about" component={About}></Route>
     </Route>
   </Router>,
-app);
+wrapper);

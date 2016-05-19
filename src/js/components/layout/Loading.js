@@ -18,11 +18,12 @@ export default class Loading extends React.Component {
     LayoutStore.on("changeLoading", this.toogleLoading);
   }
 
-  toogleLoading() {
-    this.setState({open: !this.state.open});
+  componentWillUnmount() {
+    LayoutStore.removeListener("changeLoading", this.toogleLoading);
   }
 
-  componentWillUnmount() {
+  toogleLoading() {
+    this.setState({open: !this.state.open});
   }
 
   render() {
